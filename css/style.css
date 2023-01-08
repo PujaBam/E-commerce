@@ -1,0 +1,265 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --color-primary: #0a9696;
+  --color-secondary: #7d0800;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-danger-rgb: 220, 53, 69;
+  --color-accent: #16a085;
+  --img-color: #96ad46;
+  --h1-fontsize: clamp(3rem, 5vw, 6.6rem);
+  --h2-fontsize: clamp(2.5rem, 2.5vw, 4.15rem);
+  --h3-fontsize: clamp(2rem, 2vw, 3.83rem);
+  --h4-fontsize: clamp(1.5rem, 1.5vw, 3.35rem);
+  --h5-fontsize: clamp(1.3rem, 1.3vw, 3.03rem);
+  --h6-fontsize: clamp(1.1rem, 1.1vw, 2.87rem);
+  --p-fontsize: clamp(1.5rem, 1.5vw, 1.5rem);
+  --li-fontsize: clamp(1.5rem, 1.5vw, 2.15rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  --top-spacing: 5.5rem;
+  scroll-padding-top: var(--top-spacing);
+  color: var(--colr-primary);
+}
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-family: "Barlow", sans-serif;
+}
+section {
+  padding: 3rem 0;
+}
+p {
+  text-align: justify;
+  font-size: var(--p-fontsize);
+}
+a {
+  text-decoration: none;
+}
+li {
+  font-size: var(--li-fontsize);
+}
+h1 {
+  font-size: var(--h1-fontsize);
+  font-weight: 700;
+  line-height: 9.6rem;
+}
+h2 {
+  font-size: var(--h2-fontsize);
+}
+h3 {
+  font-size: var(--h3-fontsize);
+}
+h4 {
+  font-size: var(--h4-fontsize);
+}
+h5 {
+  font-size: var(--h5-fontsize);
+}
+h6 {
+  font-size: var(--h6-fontsize);
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background: #000;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-color: none;
+  color: #fff;
+  text-align: center;
+  font-size: var(--h5-fontsize);
+}
+
+#top-header .header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+#top-header .header li {
+  list-style: none;
+}
+#top-header .header ul li {
+  list-style: none;
+}
+#top-header .navbar ul li a {
+  margin-right: 2rem;
+  color: #000;
+}
+#top-header .navbar ul li {
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .carousel-caption {
+    top: 20%;
+    text-align: left;
+
+    color: #fff;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 576px) {
+  .carousel-caption {
+    top: 16%;
+    text-align: left;
+
+    color: #fff;
+  }
+}
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .carousel-caption {
+    top: 0%;
+    text-align: left;
+    padding: 0;
+
+    color: #fff;
+  }
+  .carousel-caption h5 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .carousel-caption h1,
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+#landing-page .service i {
+  font-size: 3rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+#landing-page .service .first {
+  border: 2px solid #000;
+}
+
+#landing-page .fashion .card1 {
+  background-color: rgba(123, 198, 213, 0.679);
+}
+#landing-page .fashion .card2 {
+  background-color: rgba(219, 97, 109, 0.63);
+}
+#landing-page .fashion .card3 {
+  background-color: rgba(209, 174, 68, 0.834);
+}
+
+#landing-page .fashion .line {
+  margin-top: 5rem;
+}
+#landing-page .separator .separator-title {
+  padding: 0 1;
+  text-transform: uppercase;
+}
+#landing-page .fw-bold {
+  font-weight: 700px !important;
+}
+#landing-page .separator .line {
+  height: 1px;
+  flex: 1;
+  background: #dee2e6;
+}
+#landing-page .separator {
+  display: flex;
+  align-items: center;
+}
+#landing-page .pb-4 {
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+#landing-page .feature-product i {
+  color: #e6cd2b;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: var(--bs-card-img-overlay-padding);
+  border-radius: var(--bs-card-inner-border-radius);
+}
+#landing-page .fashion-brand .card .btn1 {
+  background: #fff;
+  border: none;
+  padding: 0.5rem;
+}
+#landing-page .fashion-brand {
+  background: #000;
+}
+#landing-page .new-arrivals .card-body i {
+  color: #e6cd2b;
+}
+#landing-page .payment-method p {
+  font-size: 1.5rem;
+}
+#landing-page .payment-method .card i {
+  font-size: 4rem;
+  align-items: center;
+}
+#landing-page .payment-method {
+  background: #8887875a;
+}
+#landing-page .latest-news p {
+  padding: 1rem;
+}
+#landing-page .best-selling-product i {
+  color: #e6cd2b;
+}
+#footer .top-footer ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+#footer .top-footer ul li i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #e6cd2b;
+}
+#footer .top-footer button {
+  padding: 0.5rem;
+}
+#footer .top-footer form input {
+  padding: 3rem;
+}
+#footer .footer .abc {
+  border: #000;
+}
+/* .owl-carousel .owl-theme {
+  height: auto;
+}
+.owl .card {
+  height: 100%;
+} */
+
+/* .owl-carousel .owl-item img {
+  width: auto;
+  height: 100%;
+} */
+.owl .card {
+  height: 100%;
+  padding: 2rem;
+}
+/* .owl-stage {
+  animation: scroll linear infinite;
+} */
